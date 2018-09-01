@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WIFI BOT IP地址" />
+
+    <!-- 输入视频地址 -->
+
+    <EditText
+        android:id="@+id/editIP"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="http://192.168.12.1:8080/?action=stream" />
+
+    <!-- 输入IP -->
+
+    <EditText
+        android:id="@+id/ip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="192.168.12.1" />
+
+    <!-- 端口号 -->
+
+    <EditText
+        android:id="@+id/port"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="8000" />
+
+    <Button
+        android:id="@+id/button_go"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="启动" />
+
+</LinearLayout>

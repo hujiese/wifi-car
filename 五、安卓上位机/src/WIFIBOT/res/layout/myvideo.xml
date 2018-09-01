@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 自定义surfaceView -->
+
+    <scut.hujie.wificar.MySurfaceView
+        android:id="@+id/mySurfaceViewVideo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <!-- 以下为控制小车的一系列按键 -->
+
+    <Button
+        android:id="@+id/TakePhoto"
+        android:layout_width="66dp"
+        android:layout_height="55dp"
+        android:text="拍照" />
+
+    <Button
+        android:id="@+id/ViewPhoto"
+        android:layout_width="66dp"
+        android:layout_height="55dp"
+        android:layout_toRightOf="@+id/TakePhoto"
+        android:layout_x="90dp"
+        android:text="查看" />
+
+    <Button
+        android:id="@+id/button_forward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TakePhoto"
+        android:text="前" />
+
+    <Button
+        android:id="@+id/button_backward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_forward"
+        android:text="后" />
+
+    <Button
+        android:id="@+id/button_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_backward"
+        android:text="左" />
+
+    <Button
+        android:id="@+id/button_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_left"
+        android:text="右" />
+
+    <Button
+        android:id="@+id/button_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_right"
+        android:text="停" />
+
+</RelativeLayout>
